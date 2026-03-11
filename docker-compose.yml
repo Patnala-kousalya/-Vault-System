@@ -1,0 +1,9 @@
+version: "3"
+services:
+  vault-system:
+    build: .
+    container_name: vault-system
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: npm install
